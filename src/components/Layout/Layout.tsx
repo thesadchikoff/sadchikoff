@@ -11,7 +11,7 @@ interface ILayout {
 }
 
 const Layout = ({children}: ILayout) => {
-    const [cookieIsOpen, setCookieIsOpen] = useState(false)
+    const [cookieIsOpen, setCookieIsOpen] = useState(true)
     return (
         <div className={'w-full h-full flex flex-col'}>
             <Header/>
@@ -19,7 +19,7 @@ const Layout = ({children}: ILayout) => {
                 {children}
             </div>
             {
-                cookieIsOpen && <CookieBanner/>
+                cookieIsOpen && <CookieBanner isVisible={() => setCookieIsOpen(false)}/>
             }
             <div className={'w-full h-[65px] flex items-center mobile:p-5 desktop:p-10 items-center justify-between'}>
                 <Link href={'/'}>

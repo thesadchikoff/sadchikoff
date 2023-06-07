@@ -33,7 +33,7 @@ export default function Home() {
                     <p className={'desktop:text-[50px] mobile:text-[30px] font-medium desktop:w-1/2 mobile:w-full'}>
                         Превратите свои идеи в реальность с помощью профессиональных разработчиков и дизайнеров нашей команды!
                     </p>
-                    <div className={'flex w-full justify-center'}>
+                    <div className={'flex w-full mobile:justify-center desktop:justify-start'}>
                         <Button className={'w-[250px]'}>Связаться</Button>
                     </div>
                 </div>
