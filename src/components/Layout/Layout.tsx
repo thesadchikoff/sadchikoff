@@ -3,6 +3,7 @@ import Header from "@/components/Header/Header";
 import CookieBanner from "@/components/CookieBanner/CookieBanner";
 import Logo from "@/components/ui/Logo/Logo";
 import Link from "next/link";
+import Head from "next/head";
 
 
 interface ILayout {

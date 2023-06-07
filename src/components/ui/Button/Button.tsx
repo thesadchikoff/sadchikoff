@@ -2,11 +2,12 @@ import React from 'react';
 import styles from './Button.module.css'
 interface IButton {
     children: string
+    className: string
 }
 
-const Button = ({children}: IButton) => {
+const Button = ({children, className}: IButton) => {
     return (
-        <button className={`${styles.button}`}>{children}</button>
+        <button className={`${styles.button} ${className}`}>{children}</button>
     );
 };
 

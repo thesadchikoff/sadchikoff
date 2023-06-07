@@ -30,7 +30,7 @@ const Header = () => {
                 <Link href={'https://github.com/bombasters'} target={'_blank'} className={'hover:text-slate-300 cursor-pointer transition-all duration-[200ms]'}>
                     <BsGithub/>
                 </Link>
-                <Link href={'#'} target={'_blank'} className={'hover:text-slate-300 cursor-pointer transition-all duration-[200ms]'}>
+                <Link href={'https://www.behance.net/SADCHIKOVDES'} target={'_blank'} className={'hover:text-slate-300 cursor-pointer transition-all duration-[200ms]'}>
                     <BsBehance/>
                 </Link>
             </div>
