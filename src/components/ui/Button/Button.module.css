@@ -1,0 +1,10 @@
+.button {
+    padding: 8px 27px;
+    color: white;
+    background: #E82121;
+    border: none;
+    outline-style: solid;
+    outline-width: 3px;
+    border-radius: 5px;
+    outline-color: rgba(232, 33, 33, 0.3);
+}
