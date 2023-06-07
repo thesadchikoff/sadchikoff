@@ -8,7 +8,7 @@ const Header = () => {
     const router = useRouter()
     const items = siteConfig.mainNav
     return (
-        <div className={'w-full h-[65px] fixed z-40 header flex items-center mobile:p-5 desktop:p-10 select-none justify-between'}>
+        <div className={'w-full h-[65px] fixed z-40 header flex items-center mobile:p-5 desktop:p-10 desktop:px-24 select-none justify-between'}>
             <Link href={'/'}>
                 <Logo/>
             </Link>
@@ -16,7 +16,7 @@ const Header = () => {
                 {
                     items?.length && items.map(item => {
                         return (
-                            <Link key={item.title} href={item.href} className={`${router.pathname === item.href && 'active_link'} text-white hover:text-[#E82121] duration-200`}>
+                            <Link key={item.title} href={item.href} className={`${router.pathname === item.href && 'active_link'} text-white hover:text-[#FF4545] font-medium duration-200`}>
                                 {item.title}
                             </Link>
                         )

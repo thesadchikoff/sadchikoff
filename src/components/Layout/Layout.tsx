@@ -21,7 +21,7 @@ const Layout = ({children}: ILayout) => {
             {
                 cookieIsOpen && <CookieBanner isVisible={() => setCookieIsOpen(false)}/>
             }
-            <div className={'w-full h-[65px] flex items-center mobile:p-5 desktop:p-10 items-center justify-between'}>
+            <div className={'w-full h-[65px] flex items-center mobile:p-5 desktop:p-10 desktop:px-24 items-center justify-between'}>
                 <Link href={'/'}>
                     <Logo/>
                 </Link>
