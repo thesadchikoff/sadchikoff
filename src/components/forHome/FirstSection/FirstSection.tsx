@@ -37,7 +37,7 @@ const FirstSection = () => {
             className={`flex mt-[20px] wrap h-screen justify-between mobile:p-5 desktop:p-24 text-white relative`}
         >
             <Image className={'absolute right-0 -z-10'} src={blurImage} alt={"blob"}/>
-            <div className={'flex flex-col gap-14'}>
+            <div className={'flex flex-col gap-[20px]'}>
                 <WriteEffect writeEffectText={stringArray} beforeText={'Индивидуальная'} afterText={'для каждого.'}/>
                 <div
                     className={'flex w-full mobile:flex-col desktop:flex-row mobile:text-[35px] desktop:gap-2 mobile:gap-5 desktop:text-[60px] font-bold mobile:text-2xl'}>
