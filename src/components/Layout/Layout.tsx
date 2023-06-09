@@ -7,7 +7,7 @@ import Head from "next/head";
 
 
 interface ILayout {
-    children: JSX.Element
+    children: React.ReactNode
 }
 
 const Layout = ({children}: ILayout) => {
