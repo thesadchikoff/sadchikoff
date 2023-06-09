@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {JSX, useState} from 'react';
 import Header from "@/components/Header/Header";
 import CookieBanner from "@/components/CookieBanner/CookieBanner";
 import Logo from "@/components/ui/Logo/Logo";
@@ -7,7 +7,7 @@ import Head from "next/head";
 
 
 interface ILayout {
-    children: React.ReactElement
+    children: JSX.Element
 }
 
 const Layout = ({children}: ILayout) => {

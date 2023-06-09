@@ -13,6 +13,18 @@ html {
   height: 100%;
 }
 
+body::-webkit-scrollbar {
+  width: 5px;               /* ширина scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: #090909;        /* цвет дорожки */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #e62121;    /* цвет плашки */
+
+
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
