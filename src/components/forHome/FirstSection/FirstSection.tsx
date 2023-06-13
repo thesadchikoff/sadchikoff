@@ -21,19 +21,18 @@ const FirstSection = () => {
         }
     };
 
-    // const textVariants = {
-    //     exit: { y: 100, opacity: 0, transition: { duration: 0.5, ease: easing } },
-    //     enter: {
-    //         y: 0,
-    //         opacity: 1,
-    //         transition: { delay: 0.1, duration: 0.5, ease: easing }
-    //     }
-    // };
+    const textVariants = {
+        exit: { y: 100, opacity: 0, transition: { duration: 0.5, ease: "easing" } },
+        enter: {
+            y: 0,
+            opacity: 1,
+            transition: { delay: 0.1, duration: 0.5, ease: "easing" }
+        }
+    };
     const stringArray = ['разработка', 'аналитика', 'айдентика']
     return (
         <motion.div
-            animate={{ y: -20 }}
-            transition={{ ease: "easeOut", duration: 1 }}
+            variants={textVariants}
             className={`flex mt-[20px] wrap h-screen justify-between mobile:p-5 desktop:p-24 text-white relative`}
         >
             <Image className={'absolute right-0 -z-10'} src={blurImage} alt={"blob"}/>

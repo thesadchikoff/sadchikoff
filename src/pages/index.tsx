@@ -24,10 +24,10 @@ export default function Home() {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                transition={{ duration: 0.3 }}
+                transition={{ duration: 1 }}
                 variants={{
                     visible: { opacity: 1, scale: 1 },
-                    hidden: { opacity: 0, scale: 0 }
+                    hidden: { opacity: 0, scale: 0 },
                 }}
                 className={'w-full h-screen bg-[#000] flex items-center relative'}>
                 <Image className={'absolute left-0 bottom-0 mobile:hidden desktop:block'} src={oneBlurMission} alt={'blur bloob'}/>
