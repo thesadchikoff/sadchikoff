@@ -1,0 +1,35 @@
+.menu {
+    opacity: 0;
+    padding: 10px;
+    min-width: 240px;
+    border-radius: 10px;
+    visibility: hidden;
+    position: absolute;
+    pointer-events: none;
+    z-index: 100;
+}
+
+.menu.ui {
+    top: 100%;
+    padding-top: 5px;
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+}
+
+.menu.ui {
+    right: 0px;
+}
+
+.menu.visible {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.ui_animate {
+    transition: opacity .15s,visibility .15s,-webkit-transform .15s;
+    transition: transform .15s,opacity .15s,visibility .15s;
+    transition: transform .15s,opacity .15s,visibility .15s,-webkit-transform .15s;
+}
