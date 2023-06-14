@@ -32,7 +32,7 @@ const FirstSection = () => {
         >
             <div className={'w-full relative flex justify-center flex-col items-center'}>
                 <div className={'flex flex-col items-center justify-center w-full absolute z-[1000] gap-16'}>
-                    <Image src={memoji} alt={'developer mobile:w-[189px] mobile:h-[217px] '}/>
+                    <Image src={memoji} alt={'developer mobile:w-[189px] mobile:h-[217px] z-[2000]'}/>
                     <div className={'flex flex-col justify-center items-center gap-2'}>
                         <span className={'font-bold text-[32px]'}>Nikolay Sadchikov</span>
                         <span className={'gradient-text font-bold text-[25px]'}>Fullstack Developer</span>
