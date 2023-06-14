@@ -1,12 +1,7 @@
 import React from 'react';
-import Image from "next/image";
-import blurImage from "../../../../public/blurPromo.svg";
-import Typewriter from "typewriter-effect";
-import Button from "@/components/ui/Button/Button";
 import {motion} from "framer-motion";
-import WriteEffect from "@/components/WriteEffect/WriteEffect";
-import logo3D from '../../../../public/2023-06-09_12-39-35-transformed.png'
-import Link from "next/link";
+import memoji from '../../../../public/memoji.svg'
+import Image from "next/image";
 
 const FirstSection = () => {
     const imageVariants = {
@@ -33,22 +28,17 @@ const FirstSection = () => {
     return (
         <motion.div
             variants={textVariants}
-            className={`flex mt-[20px] wrap h-screen justify-between mobile:p-5 desktop:p-24 text-white relative`}
+            className={`flex w-full flex-col wrap justify-center items-center text-white relative`}
         >
-            <Image className={'absolute right-0 -z-10'} src={blurImage} alt={"blob"}/>
-            <div className={'flex flex-col gap-[20px]'}>
-                <WriteEffect writeEffectText={stringArray} beforeText={'Индивидуальная'} afterText={'для каждого.'}/>
-                <div
-                    className={'flex w-full mobile:flex-col desktop:flex-row mobile:text-[35px] desktop:gap-2 mobile:gap-5 desktop:text-[60px] font-bold mobile:text-2xl'}>
-
+            <div className={'w-full relative flex justify-center flex-col items-center'}>
+                <div className={'flex flex-col items-center justify-center w-full absolute z-[1000] gap-16'}>
+                    <Image src={memoji} alt={'developer mobile:w-[189px] mobile:h-[217px] '}/>
+                    <div className={'flex flex-col justify-center items-center gap-2'}>
+                        <span className={'font-bold text-[32px]'}>Nikolay Sadchikov</span>
+                        <span className={'gradient-text font-bold text-[25px]'}>Fullstack Developer</span>
+                    </div>
                 </div>
-                <p className={'desktop:text-[50px] mobile:text-[30px] font-medium desktop:w-1/2 mobile:w-full'}>
-                    Превратите свои идеи в реальность с помощью профессиональных разработчиков и дизайнеров нашей
-                    команды!
-                </p>
-                <div className={'flex w-full mobile:justify-center desktop:justify-start'}>
-                    <Button className={'mobile:w-full desktop:w-[250px] desktop:h-[50px]'}>Связаться</Button>
-                </div>
+                <div className="slider-thumb flex-1 relative"/>
             </div>
         </motion.div>
     );

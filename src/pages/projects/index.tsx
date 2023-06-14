@@ -22,9 +22,14 @@ const Projects = () => {
                     title={'Projects'}
                     about={'Look'}
                     navigation
+                    
                     effect={'fade'}
+                    autoplay={{
+                        delay: 1,
+                        waitForTransition: true,
+                    }}
                     pagination={{clickable: true}}
-                    scrollbar={{draggable: true}}
+                    scrollbar={{draggable: true, hide: true}}
                     onSwiper={(swiper) => console.log(swiper)}
                     onSlideChange={() => console.log('slide change')}
                 >

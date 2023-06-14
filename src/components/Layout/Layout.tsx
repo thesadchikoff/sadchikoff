@@ -1,9 +1,7 @@
-import React, {JSX, useState} from 'react';
+import React, {useState} from 'react';
 import Header from "@/components/Header/Header";
-import CookieBanner from "@/components/CookieBanner/CookieBanner";
-import Logo from "@/components/ui/Logo/Logo";
 import Link from "next/link";
-import Head from "next/head";
+import {MdAlternateEmail} from 'react-icons/md'
 
 
 interface ILayout {
@@ -18,16 +16,9 @@ const Layout = ({children}: ILayout) => {
             <div className={'flex-1 mt-[80px]'}>
                 {children}
             </div>
-            {
-                cookieIsOpen && <CookieBanner isVisible={() => setCookieIsOpen(false)}/>
-            }
-            <div className={'w-full h-[65px] flex items-center mobile:p-5 desktop:p-10 desktop:px-24 items-center justify-between'}>
-                <Link href={'/'}>
-                    <Logo/>
-                </Link>
-                <div className={'text-white mobile:text-xs desktop:text-[14px] text-[#AEAEAE] font-medium'}>
-                    <span>&copy; 2023. All rights reserved</span>
-                </div>
+            <div className={'w-full h-[65px] flex items-center gap-2 mobile:p-5 desktop:p-10 desktop:px-24 justify-center'}>
+                <MdAlternateEmail className={'text-white'}/>
+                    <Link className={'text-white'} href={"mailto:nick.sadchikoff@yandex.ru"}>nick.sadchikoff@yandex.ru</Link>
             </div>
         </div>
     );
