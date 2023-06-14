@@ -16,7 +16,7 @@ const Header = () => {
             }}
         >
             <div className={'w-full  justify-center items-center flex text-white text-xl items-center gap-10'}>
-                <Link href={'#'} target={'_blank'}
+                <Link href={'https://t.me/ssssssssss_rk'} target={'_blank'}
                       className={'hover:text-slate-300 cursor-pointer transition-all duration-[200ms]'}>
                     <BsTelegram/>
                 </Link>
