@@ -38,7 +38,7 @@ const FirstSection = () => {
                         <span className={'gradient-text font-bold text-[25px]'}>Fullstack Developer</span>
                     </div>
                 </div>
-                <div className="slider-thumb flex-1 relative -z-[-2000]"/>
+                <div className="slider-thumb flex-1 relative -z-[2000]"/>
             </div>
         </motion.div>
     );
