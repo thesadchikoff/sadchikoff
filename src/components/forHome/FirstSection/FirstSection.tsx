@@ -39,6 +39,7 @@ const FirstSection = () => {
                     </div>
                 </div>
                 <div className="slider-thumb flex-1 relative -z-[2000]"/>
+                {/*<div className="slider-thumb absolute right-[55%] -z-[2000]"/>*/}
             </div>
         </motion.div>
     );

@@ -17,8 +17,8 @@ const Layout = ({children}: ILayout) => {
                 {children}
             </div>
             <div className={'w-full h-[65px] flex items-center gap-2 mobile:p-5 desktop:p-10 desktop:px-24 justify-center'}>
-                <MdAlternateEmail className={'text-white'}/>
-                    <Link className={'text-white'} href={"mailto:nick.sadchikoff@yandex.ru"}>nick.sadchikoff@yandex.ru</Link>
+                {/*<MdAlternateEmail className={'text-white'}/>*/}
+                    <Link className={'text-white mail-link'} href={"mailto:nick.sadchikoff@yandex.ru"}><b className={'left-mark'}>[</b> nick.sadchikoff@yandex.ru <b className={'right-mark'}>]</b></Link>
             </div>
         </div>
     );
