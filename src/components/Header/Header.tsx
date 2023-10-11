@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {BsTelegram, BsGithub, BsBehance} from 'react-icons/bs'
 import Link from "next/link";
 import {motion} from "framer-motion";
@@ -15,7 +15,7 @@ const Header = () => {
                 ease: [0, 0.71, 0.2, 1.01]
             }}
         >
-            <div className={'w-full  justify-center items-center flex text-white text-xl items-center gap-10'}>
+            <div className={'w-full  justify-center flex text-white text-xl items-center gap-10'}>
                 <Link href={'https://t.me/ssssssssss_rk'} target={'_blank'}
                       className={'hover:text-slate-300 cursor-pointer transition-all duration-[200ms]'}>
                     <BsTelegram/>
